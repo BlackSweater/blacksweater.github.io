@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Example of Sherlock Holmes Museum</title>
+<link href="css/main2.css" rel="stylesheet" type="text/css" />
+<link href="css/elusive-webfont.css" rel="stylesheet" type="text/css" />
+<link href="css/immersive-slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.immersive-slider.js"></script>
+<script language="javascript">
+    $(document).ready(function() {
+      /*  2nd example */ 
+      $("#menu2 li a").wrapInner( '<span class="out"></span>' );
+      $("#menu2 li a").each(function() {
+        $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+      });
+
+      $("#menu2 li a").hover(function() {
+        $(".out", this).stop().animate({'top':  '45px'},  200); // move down - hide
+        $(".over",this).stop().animate({'top':  '0px'},   200); // move down - show
+
+      }, function() {
+        $(".out", this).stop().animate({'top':  '0px'},   200); // move up - show
+        $(".over",this).stop().animate({'top':  '-45px'}, 200); // move up - hide
+      });
+    });
+  </script>
+</head>
+
+<body>
+<div id="menu2" class="menu">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="museum.html">博物馆探索之旅</a></li>
+        <li><a href="jinianpin.html">纪念周边</a></li>
+        <li><a href="hotel.html">酒店住宿</a></li>
+        <li><a href="#copyright_content">Contacts</a></li>
+      </ul>
+</div>
+<table width="100%" border="0">
+  <tr>
+    <td><img src="酒店/image/Hostel 639.jpg" width="300" height="auto" /></td>
+    <td><p>Hostel 639&nbsp;639 Harrow Road,温布利地区</a><br>伦敦,大伦敦,NW10 5NU,英国</p></td>
+  </tr>
+  <tr>
+    <td><img src="酒店/image/No Limit Hostel Camden @ The Lord Southampton.jpg" width="300" height="auto" /></td>
+    <td>No Limit Hostel Camden @ The Lord Southampton 2 Southampton Road<br>伦敦,大伦敦,NW5 4HX,英国</td>
+  </tr>
+  <tr>
+    <td><img src="酒店/image/Palmers Lodge Hillspring at Willesden Green(威尔斯登格林帕尔默斯山泉酒店).jpg" width="300" height="auto" /></td>
+    <td>Palmers Lodge Hillspring at Willesden Green(威尔斯登格林帕尔默斯山泉酒店)<br>233 Willesden Lane,温布利地区,伦敦,大伦敦,NW2 5RP,英国</td>
+  </tr>
+  <tr>
+    <td><img src="酒店/image/Smart Hyde Park Inn(美丽海德公园旅馆).jpg" width="300" height="auto" /></td>
+    <td>Smart Hyde Park Inn(美丽海德公园旅馆)48-50 Inverness Terrace<br>海德公园地区</a>,伦敦,大伦敦,W2 3JA,英国</td>
+  </tr>
+  <tr>
+    <td><img src="酒店/image/The Londonears Hostel(近伦敦旅馆).jpg" width="300" height="auto" /></td>
+    <td>The Londonears Hostel(近伦敦旅馆)1 Barkston Gardens<br>伯爵阁地区</a>,伦敦,大伦敦,SW5 0ER,英国</td>
+  </tr>
+</table>
+</body>
+
+</html>

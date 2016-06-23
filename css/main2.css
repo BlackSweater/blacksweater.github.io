@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/** style used for nav examples url:http://www.jqueryba.com **/
+    .menu { 
+      height: 45px;
+      display: block;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu ul li {
+      /* width and height of the menu items */  
+      float: left;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      line-height: 45px;
+    }
+
+    .menu ul li a {
+      /* must be postioned relative  */ 
+      position: relative;
+      display: block;
+      width: 110px;
+      height: 45px;
+      font-family: Arial;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .menu ul li a span {
+      /* all layers will be absolute positioned */
+      position: absolute;
+      left: 0;
+      width: 110px;
+    }
+
+    .menu ul li a span.out {
+      top: 0px;
+    }
+
+    .menu ul li a span.over,
+    .menu ul li a span.bg {
+      /* hide */  
+      top: -45px;
+    }
+
+    /** 1st example **/
+
+    #menu {
+      background: #EEE;
+    }
+
+    #menu ul li a {
+      color: #000;
+    }
+
+    #menu ul li a span.over {
+      color: #FFF;
+    }
+
+    #menu ul li span.bg {
+      /* height of the menu items */  
+      height: 45px;
+      background: url('bg_over.gif') center center no-repeat;
+    }
+    
+    /** 2nd example **/
+
+    #menu2 {
+      background: #000;   
+    }
+    
+    #menu2 ul li a {
+      color: #FFF;
+    }
+
+    #menu2 ul li a span.over {
+      background: #FFF;
+      color: #000;
+    }
+
+    .menu2 p span{
+    	float:right;
+      font-size:40px;
+      color: #000;
+    }
+
+/** nav finished **/
+
+/* Custom Stylesheet */
+body, html {
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      background:#f3f3f3;
+      text-align: center;
+}
+
+body, .main, html {
+  padding: 0;
+  width: 100%;
+  float: left;
+  font-family: 'Roboto',Arial,sans-serif;
+}
+
+body .header{
+  color: #ecf0f1;
+}
+body .header p{color: #666;}
+body .header p a{color: #6699cc;}
+.main p {
+  color: #ecf0f1;
+  font-size: 16px;
+  font-weight: 100;
+}
+.nav-top {
+  background: black;
+}
+.nav-top a {
+  color: #ecf0f1;
+}
+
+/* ALL DEMO */
+h1 {
+  color: #000;
+  font-family: 'Roboto',Arial,sans-serif;
+  font-size: 64px;
+}
+
+h1 span {
+  font-size: 44px;
+  display: block;
+}
+
+
+.menu, .header, .nav-top {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.page_container {
+  max-width: 960px;
+  margin: 150px auto;
+}
+
+.header {
+  background: white;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+.header h1{
+  margin-bottom: 0;
+  font-size: 45px;
+}
+
+.header .menu {
+  padding-bottom: 10px;
+}
+
+.demo5  .header h2{
+  margin-bottom: 0;
+  color: #666;;
+}
+
+.copyright {
+	clear: both;
+	width: 800px;
+	height: 200px;
+	background-color: #E8e8E8;
+	margin-top: 0px;
+}
+.copyright_content {
+	width: 800px;
+	height: 180px;
+	margin: 0 auto;
+	padding-top: 20px;
+  color:white;
+}
+.copyright_content li {
+	list-style-type: none;
+	float: left;
+	width: 200px;
+	text-align: center;
+	background: url(../img/line.png) no-repeat right center;
+	font-size: 18px;
+	font-family:'Roboto',Arial,sans-serif;
+	line-height: 30px;
+	color: #999;
+}
+.copyright_content li a:link, .copyright_content li a:visited {
+	text-decoration: none;
+	color: #999;
+}
+.copyright_content li a:hover, .copyright_content li a:active {
+	color: #999;
+	text-decoration: none;
+}
+.copyright_content li ul li {
+	font-size: 14px;
+}
+
+body,p{
+  -webkit-margin-before:0em;
+  -webkit-margin-after:0em;
+}
+

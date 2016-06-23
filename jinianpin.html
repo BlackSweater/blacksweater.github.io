@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Example of Sherlock Holmes Museum</title>
+<link href="css/main2.css" rel="stylesheet" type="text/css" />
+<link href="css/elusive-webfont.css" rel="stylesheet" type="text/css" />
+<link href="css/immersive-slider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.immersive-slider.js"></script>
+<script language="javascript">
+    $(document).ready(function() {
+      /*  2nd example */ 
+      $("#menu2 li a").wrapInner( '<span class="out"></span>' );
+      $("#menu2 li a").each(function() {
+        $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+      });
+
+      $("#menu2 li a").hover(function() {
+        $(".out", this).stop().animate({'top':  '45px'},  200); // move down - hide
+        $(".over",this).stop().animate({'top':  '0px'},   200); // move down - show
+
+      }, function() {
+        $(".out", this).stop().animate({'top':  '0px'},   200); // move up - show
+        $(".over",this).stop().animate({'top':  '-45px'}, 200); // move up - hide
+      });
+    });
+  </script>
+</head>
+
+<body>
+<div id="menu2" class="menu">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="museum.html">博物馆探索之旅</a></li>
+        <li><a href="jinianpin.html">纪念周边</a></li>
+        <li><a href="hotel.html">酒店住宿</a></li>
+        <li><a href="#copyright_content">Contacts</a></li>
+      </ul>
+</div>
+<img src="纪念品/image/CggYs1cgbbmAPvXqAAleNChbev8898.jpg" width="100" height="100" onmouseover="pic.src=this.src"/><img src="纪念品/image/CggYsFcgbd2AJVDKAAfkjNu228I421.jpg" width="100" height="100" onmouseover="pic.src=this.src"/>
+  <img src="纪念品/image/CggYGVXonj6ACFjMAAH1v311gpk594.jpg" width="100" height="100" onmouseover="pic.src=this.src"/>
+  <img src="纪念品/image/CggYGlardp-ARcRAAAHu8_boA2U156.jpg" width="100" height="100" onmouseover="pic.src=this.src"/><img src="纪念品/image/CggYHFXonj-AS1wLAAJ4ljiiVMU897.jpg" width="100" height="100" onmouseover="pic.src=this.src"/>
+  <img src="纪念品/image/CggYsVcgbe6ATkt8AAfpzn2OP5c430.jpg" width="100" height="100" onmouseover="pic.src=this.src"/>
+  <img src="纪念品/image/CggYHVXonkCAPgI5AAIpk6WdvsQ381.jpg" width="100" height="100" onmouseover="pic.src=this.src"/>
+  <img src="纪念品/image/CggYsVardqCARdFEAAICxiarhGI121.jpg" width="100" height="100" onmouseover="pic.src=this.src"/>
+<div width="600" rowspan="2"><img src="" width="600" height="600" alt="" id="pic" name="pic" /></div>
+<p>&nbsp;</p>
+</body>
+</html>
